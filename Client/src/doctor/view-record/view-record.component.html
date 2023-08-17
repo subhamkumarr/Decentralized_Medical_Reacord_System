@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="container" *ngIf="!editRecord">
+        <div class="h3">View Patient Record</div>
+        <form class="patient__id" #patForm="ngForm" (ngSubmit)="onPatIDSubmit()">
+            <input [(ngModel)]="model.patID" name="patID" #patID type="text" class="form-control" placeholder="Patient ID (0x00000000000000000000000000000000000000000)">
+            <button type="submit" class="btn btn-primary">Consult</button>
+        </form>
+
+        <app-progress_card [show]="showProgress" [msg_text]="progressMsg" [success]="progressSuccess" [warn]="progressWarn" (close)="onProgressClose()" [buttonTxt]="progressBtnTxt" (retry)="deleteRec()">
+        </app-progress_card>
+
+        <div class="records my-3" *ngIf="PatientRecords.length >=1">
+            <table class="table table-hover">
+                <thead>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Doctor</th>
+                    <th>view</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let rec of PatientRecords;let i = index">
+                        <td>{{i + 1}}</td>
+                        <td>{{rec.date | date:'short'}}</td>
+                        <td><span class="fs-6 text-secondary">{{rec.doctor}}</span></td>
+                        <td>
+                            <button class="btn btn-success px-2 py-1" (click)="onViewRecord(rec)">
+                                <i class="fas fa-file-medical"></i>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="btn btn-info px-2 py-1" (click)="onUpdateRecord(rec,i)">
+                                <i class="fas fa-edit"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger px-2 py-1" (click)="onDeleteRecord(rec,i)">
+                                <i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <app-patient-record *ngIf="editRecord" [PatientDetails]="PatientDetails" [PatientRecords]="PatientRecord" (saveRecord)="updateRecord($event)"></app-patient-record>
+    <app-record *ngIf="viewRecord" [PatientRecord]="PatientRecord" (close)="onRecordClose()">
+    </app-record>
+
+</div>

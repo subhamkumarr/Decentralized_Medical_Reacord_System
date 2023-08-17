@@ -1,0 +1,13 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+footer {
+    background-color: rgb(31, 129, 168);
+    padding-bottom: 2rem;
+    padding: 3rem 0 2rem !important;
+    text-align: center;
+    font-size: 0.913rem;
+    color: white;
+  }
+  

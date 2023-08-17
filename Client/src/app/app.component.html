@@ -1,0 +1,16 @@
+<div class="header">
+  <a class="logo px-2" href="#">
+    Private Key
+  </a>
+  <div class="account px-2">
+    {{accounts || 'User Account ID (`Connect to Ganache and Metamask`)'}}
+  </div>
+</div>
+
+<app-progress_card [show]="progressShow" [msg_text]="load_text" (close)="closePopup()" [warn]="progressWarn"
+  [success]="progressSuccess">
+</app-progress_card>
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,70 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* .top {
+    margin-top: 40px;
+} */
+.section__title{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+.services__container {
+    
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 196px;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .services__data {
+    display: grid;
+    row-gap: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px hsla(205.8, 100%, 15%, 0.15);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  .services__img {
+    width: 135px;
+    justify-self: center;
+    margin-bottom: 0.5;
+  }
+  .services_img {
+    width: 180px;
+    justify-self: center;
+    margin-bottom: 0.5;
+  }
+  .servicesimg {
+    height: 170px;
+    justify-self: center;
+    margin-bottom: 0.5;
+  }
+
+ .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+ 
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+  .services__container div {
+    padding: 1.6rem;
+    width: 30%;
+  }

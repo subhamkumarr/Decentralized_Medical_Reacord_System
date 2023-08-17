@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <div class="container pt-4 p-4">
+        <div class="row">
+            <div class="appointment col-md-6">
+                <h2 class="text-center my-4">
+                    Book Appointment
+                </h2>
+                <form #from="ngForm" (ngSubmit)="addAppointment()">
+                    <div class="form-group row my-2">
+                        <label class="col-sm-4 col-lg-4">
+              Patient ID
+            </label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input [(ngModel)]="patientID" name="patID" type="text" id="patient-name" class="form-control patID" placeholder="Patient Account ID" disabled>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-group row my-2">
+                        <label class="col-sm-4 col-lg-4">
+              Speciality
+            </label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input [(ngModel)]="model.department" name="department" class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                            <datalist id="datalistOptions" class="bg-light" role="combobox">
+                <option *ngFor="let spec of Specialities" [value]="spec"></option>
+              </datalist>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-group row my-2">
+                        <label class="col-sm-4 col-lg-4">
+              Dcotor
+            </label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input [(ngModel)]="model.docID" name="docID" class="form-control" list="datalistOptionsDoc" id="exampleDataList" placeholder="Type to search...">
+                            <datalist id="datalistOptionsDoc">
+                <option *ngFor="let doc of DoctorsList" [value]="doc.docID">{{doc.fName}} {{doc.lName}}</option>
+              </datalist>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-group row my-2">
+                        <label class="col-sm-4 col-lg-4">
+              Date
+            </label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input [(ngModel)]="model.date" name="date" type="date" id="date" class="form-control" [min]="today | date:'YYYY-MM-d'">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-group row my-2">
+                        <label class="col-sm-4 col-lg-4">
+              Time
+            </label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input [(ngModel)]="model.time" name="time" type="time" id="time" class="form-control">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="form-group row justify-content-end my-3">
+                        <div class="col-sm-5">
+                            <button type="submit" class="btn btn-primary">
+                Book
+              </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <app-progress_card [show]="showProgress" [msg_text]="progressMsg" [warn]="progressWarn" [buttonTxt]="buttonTxt" [success]="progressSuccess" (retry)="onRegister()" (close)="close()"></app-progress_card>
+</div>

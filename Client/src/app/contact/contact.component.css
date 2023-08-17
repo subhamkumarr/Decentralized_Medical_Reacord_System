@@ -1,0 +1,81 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3rem;
+  /*========== Colors ==========*/
+  --hue: 205.8;
+  --sat: 35.2%;
+  --first-color: hsl(var(--hue), var(--sat), 60%);
+  --first-color-light: hsl(var(--hue), var(--sat), 85%);
+  --first-color-lighten: hsl(var(--hue), var(--sat), 80%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 53%);
+  --title-color: hsl(var(--hue), 4%, 15%);
+  --text-color: hsl(var(--hue), 4%, 35%);
+  --text-color-light: hsl(var(--hue), 4%, 65%);
+  --body-color: hsl(var(--hue), 0%, 100%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue), 4%, 85%);
+  --scroll-thumb-color: hsl(var(--hue), 4%, 75%);
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  /*========== Font weight ==========*/
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /*========== Margenes ==========*/
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+.contact__container {
+    padding-bottom: 3rem;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 186px;
+    font-family: "Poppins", sans-serif;
+    margin-right: 414px;
+  }
+  
+  .contact {
+    width: auto;
+  }
+  .contact__description {
+    margin-top: 20px;
+    /* text-align: center; */
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+  }
+  
+  .contact__content {
+    font-size: large;
+    row-gap: 0.75rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact__address {
+    font-size: 0.913rem;
+    font-weight: 600;
+    color: hsl(var(--hue), 4%, 15%);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact__information {
+    font-weight: initial;
+    color: hsl(var(--hue), 4%, 35%);
+    font-family: "Poppins", sans-serif;
+  }

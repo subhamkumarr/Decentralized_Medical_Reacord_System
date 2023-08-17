@@ -1,0 +1,89 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="head">Doctor Dashboard</div>
+    <hr>
+    <div class="content">
+      <div class="card mt-2">
+        <button class="btn py-1 px-2"><i class="fas fa-edit"></i> Edit</button>
+        <div class="doctor w-100 p-2 d-flex flex-row align-items-center">
+          <div class="doc-image">
+            <img class="border border-1 border-secondary rounded-circle p-1"
+              [src]='"http://localhost:8000"+DoctorDetails.image || "../../../assets/images/doctor.png"'
+              alt="Doctor Image" width="150px" height="150px">
+          </div>
+          <div class="doc-info d-flex flex-column">
+            <div class="col">
+              <div class="row py-2">
+                <div class="col-md-12">
+                  <b>DocID: </b> <span class="docID"> <b>{{DoctorDetails.docID}}</b></span>
+                </div>
+              </div>
+              <div class="row-md-12 d-flex flex-row justify-content-between">
+                <div class="col-md-12 d-flex flex-column">
+                  <div>
+                    <b>Full Name : </b> <span class="fName">{{DoctorDetails.fName}} {{DoctorDetails.lName}}</span></div>
+                  <div>
+                    <b>Date of Joining : </b> <span class="Doj">{{DoctorDetails.Doj}}</span>
+                  </div>
+                  <div>
+                    <b>Speciality: </b><span class="speciality">{{DoctorDetails.department}}</span>
+                  </div>
+
+                </div>
+                <div class="col-md-12 d-flex flex-column">
+                  <div>
+                    <b>Email : </b><span class="emailID">{{DoctorDetails.emailID}}</span></div>
+                  <div>
+                    <b>Phone: </b><span class="phone">{{DoctorDetails.phone}}</span>
+                  </div>
+                  <div>
+                    <b>City </b><span class="city">{{DoctorDetails.city}}</span>
+                  </div>
+                  <div>
+                    <b>State: </b><span class="state">{{DoctorDetails.state}}</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h3 mt-2">Appointements</div>
+      <div class="d-flex mt-3" *ngIf="Appointments.length ==0">
+        <div class="h6">No upcoming Appointments</div>
+      </div>
+      <div class="row mt-2" *ngIf="Appointments.length >0">
+        <div class="col-md-12">
+          <table class="table table-hover">
+            <thead>
+              <th>#</th>
+              <th>Patient</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let app of Appointments;let i = index">
+                <td>{{i+1}}</td>
+                <td class="name">{{app.patName}}<br><span class="id">{{app.patID}}</span></td>
+                <td class="date">{{app.date}}</td>
+                <td class="time">{{app.time }}</td>
+                <td>
+                  <div *ngIf="app.status">
+                    <span class="text-secondary">Consulted</span>
+                  </div>
+                  <div *ngIf="!app.status"><span class="text-success">Active</span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

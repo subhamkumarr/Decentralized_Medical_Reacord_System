@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="container mt-3" [hidden]="isPatient">
+    <div class="h3">Patient Consultation</div>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12" *ngFor="let app of Appointments">
+        <div class="card p-2 mt-2">
+          <div class="row">
+            <div >
+              <div><b>Patient :</b>  {{app.patName}} (<span class="id">{{app.patID}}</span>)</div>
+              <div><b>Date :</b> {{app.date}}</div>
+              <div><b>Time :</b> {{app.time}}</div>
+            </div>
+            <div >
+              <button type="button" class="btn btn-primary mt-2" (click)="onPatIDSubmit(app.patID,app.id)" [disabled]="app.status">Consult</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Record  -->
+  <div class="container" [hidden]="!isPatient">
+    <div class="h3">Patient Medical Record</div>
+    <app-patient-record [PatientDetails]="PatientDetails" (saveRecord)="onMedRecordSave($event)"></app-patient-record>
+  </div>
+  <!-- Record end -->
+  <!-- Progress -->
+  <app-progress_card [show]="showProggressCard" [warn]="showProgressWarning" [msg_text]="progressMsg"  (retry)="onRetry()"></app-progress_card>
+  <!-- Progress End -->
+</div>

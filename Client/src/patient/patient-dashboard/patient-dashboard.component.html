@@ -1,0 +1,16 @@
+<div class="overlay" [hidden]="isPatient"></div>
+<app-progress_card [show]=" !isPatient" [msg_text]="progressMsg" [warn]="progressWarn" (retry)="checkIfPatient()">
+  </app-progress_card>
+
+  <div class="dashboard"></div>
+
+  <patient-header (onCollapse)="isCollapse = !isCollapse"></patient-header>
+
+  <div class="container-fluid m-0">
+    <div class="row m-0">
+      <patient-sidebar [isCollapsed]="isCollapse"></patient-sidebar>
+      <main class="col-md-10 ms-sm-auto col-lg-10 m-0">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>

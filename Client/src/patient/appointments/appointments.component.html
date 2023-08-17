@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="container">
+    <div class="h3 mt-2">Appointements</div>
+      <div class="d-flex mt-3" *ngIf="Appointments.length ==0">
+        <div class="h6">No upcoming Appointments</div>
+      </div>
+      <div class="row mt-2" *ngIf="Appointments.length >0">
+        <div class="col-md-12">
+          <table class="table table-hover">
+            <thead>
+              <th>#</th>
+              <th>Patient</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let app of Appointments;let i = index">
+                <td>{{i+1}}</td>
+                <td>{{app.patName}}<br><span class="id">{{app.patID}}</span></td>
+                <td>{{app.date}}</td>
+                <td>{{app.time }}</td>
+                <td>
+                  <div *ngIf="app.status">
+                    <span class="text-secondary">Consulted</span>
+                  </div>
+                  <div *ngIf="!app.status"><span class="text-success">Active</span></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+</div>

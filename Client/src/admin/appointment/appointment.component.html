@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="container">
+    <h2>Appointments</h2>
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <table class="table table-hover">
+          <thead>
+            <th>#</th>
+            <th>Docotor</th>
+            <th>Patient</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let app of Appointments;let i = index">
+              <td>{{i+1}}</td>
+              <td class="name">{{app.docName}} <br> <span class="id">{{app.docID}}</span></td>
+              <td class="name">{{app.patName}} <br> <span class="id">{{app.patID}}</span></td>
+              <td class="date">{{app.date}}</td>
+              <td class="time">{{app.time }}</td>
+              <td class="status">
+                <div *ngIf="app.status">
+                  <span class="text-secondary">Consulted</span>
+                </div>
+                <div *ngIf="!app.status"><span class="text-success">Active</span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
