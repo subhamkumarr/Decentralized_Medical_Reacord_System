@@ -1,76 +1,90 @@
 <div class="container-fluid">
-  <div class="container pt-4">
-    <form class="register mt-5" [noValidate]="false" #docForm="ngForm" (ngSubmit)="onSubmit()">
-      <h3 class="h3 my-3">Register Patient</h3>
-      <div class="row form-row">
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>
-              First Name
-              <sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup>
-            </label>
-            <input [(ngModel)]="model.fName" name="fName" id="fname" type="text" class="form-control"
-              placeholder="first name" required />
+  <video autoplay muted loop id="video-background">
+    <!-- <source src="../../assets/images/v8.mp4" type="video/mp4"> -->
+    Your browser does not support the video tag.
+  </video>
+  <div class="container-fluid">
+    <div class="container pt-4">
+      <form class="register mt-5" [noValidate]="false" #docForm="ngForm" (ngSubmit)="onSubmit()">
+        <h3 class="h3 my-3">Register Patient</h3>
+        <div class="row form-row">
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>
+                First Name
+                <sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup>
+              </label>
+              <input [(ngModel)]="model.fName" name="fName" id="fname" type="text" class="form-control"
+                placeholder="first name" required />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>Last Name<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+              <input [(ngModel)]="model.lName" name="lName" id="lname" type="text" class="form-control"
+                placeholder="last name" />
+            </div>
+          </div>
+  
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>Mobile<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+              <input [(ngModel)]="model.phone" name="phone" id="mob" type="text" class="form-control" placeholder="mobile"
+                required />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>Abha Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+              <input [(ngModel)]="model.abhaId" name="abha" id="abhaId" type="text" class="form-control" placeholder="Enter abhaId"
+                     required />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>Aadhaar Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+              <input [(ngModel)]="model. aadhaarId" name="aadhaar" id="aadhaar" type="text" class="form-control" placeholder="Enter aadhaar" required />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label>Patient Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+              <input [(ngModel)]="model.patID" name="docID" id="accid" type="text" class="form-control"
+                placeholder="patient account id" required />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>City<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
+              <input [(ngModel)]="model.city" name="city" id="city" type="text" class="form-control" placeholder="city"
+                required />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="form-group">
+              <label>State</label>
+              <input [(ngModel)]="model.state" name="state" id="state" type="text" class="form-control"
+                placeholder="state" />
+            </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>Last Name<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
-            <input [(ngModel)]="model.lName" name="lName" id="lname" type="text" class="form-control"
-              placeholder="last name" />
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>Mobile<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
-            <input [(ngModel)]="model.phone" name="phone" id="mob" type="text" class="form-control" placeholder="mobile"
-              required />
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>Abha Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
-            <input [(ngModel)]="model.abhaId" name="city" id="abhaId" type="text" class="form-control" placeholder="abhaId"
-                   required />
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>Aadhaar Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
-            <input [(ngModel)]="model.aadhaar" name="city" id="aadhaar" type="text" class="form-control" placeholder="aadhaar"
-                   required />
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="form-group">
-            <label>Patient Id<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
-            <input [(ngModel)]="model.patID" name="docID" id="accid" type="text" class="form-control"
-              placeholder="patient account id" required />
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>City<sup class="fas fa-asterisk fw-normal text-danger" style="font-size: 8px;"></sup></label>
-            <input [(ngModel)]="model.city" name="city" id="city" type="text" class="form-control" placeholder="city"
-              required />
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="form-group">
-            <label>State</label>
-            <input [(ngModel)]="model.state" name="state" id="state" type="text" class="form-control"
-              placeholder="state" />
-          </div>
-        </div>
-      </div>
-      <button type="submit" id="btn" class="btn btn-primary mb-3">
-        Add Patient
-      </button>
-    </form>
+        <button type="submit" id="btn" class="btn btn-primary mb-3">
+          Add Patient
+        </button>
+      </form>
+    </div>
+    <app-progress_card [success]="success" [show]="show" [msg_text]="msg_text" [warn]="warn" (retry)="onSubmit()"
+      (close)="onClose()">
+    </app-progress_card>
   </div>
-  <app-progress_card [success]="success" [show]="show" [msg_text]="msg_text" [warn]="warn" (retry)="onSubmit()"
-    (close)="onClose()">
-  </app-progress_card>
 </div>
+
+
+
+
+
+
+
+
+
 

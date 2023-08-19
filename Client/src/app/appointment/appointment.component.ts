@@ -7,7 +7,7 @@ import { warn } from 'console';
 @Component({
   selector: 'app-appointment',
   templateUrl: './appointment.component.html',
-  styleUrls: ['./appointment.component.sass'],
+  styleUrls: ['./appointment.component.css'],
 })
 export class AppointmentComponent implements OnInit {
   constructor(

@@ -4,14 +4,14 @@ import {BlockchainService} from 'src/services/blockchain.service';
 @Component({
     selector: 'app-register',
     templateUrl: './register.component.html',
-    styleUrls: ['./register.component.sass'],
+    styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
     model: any = {
         patID: '',
-        fName: 'test_name',
-        lName: 'test_name',
-        phone: '123456789',
+        fName: '',
+        lName: '',
+        phone: '',
         city: 'city',
         state: 'state',
         abhaId: '',
@@ -49,11 +49,12 @@ export class RegisterComponent implements OnInit {
             return
         }
         if (this.model.aadhaarId.length != 12 ) {
-            this.msg_text = 'Please add valid Id';
+            this.msg_text = 'Please add valid  aadhar Id';
+            // console.log(this.model.aadhaarId.length);
             this.warn = true;
             return
         }
-        if (this.model.abhaId.length != 12 ) {
+        if (this.model.abhaId.length != 14 ) {
             this.msg_text = 'Please add valid Id';
             this.warn = true;
             return

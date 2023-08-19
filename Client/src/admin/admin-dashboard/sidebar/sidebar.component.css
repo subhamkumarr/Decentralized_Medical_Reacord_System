@@ -66,8 +66,9 @@
 }
 .list-main button:hover,
 .btn-dash button:focus {
-  color: rgba(0, 0, 0, .85);
-  background-color: #d2f4ea;
+  /* color: rgba(0, 0, 0, .85); */
+  color: white;
+  background-color: #988f94;
 }
 
 /* .btn-dash::before {

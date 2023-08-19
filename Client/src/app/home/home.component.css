@@ -6,7 +6,39 @@
   height: calc(100vh - 46px);
   padding: 0px;
   margin: 0px;
+  /* background-image: linear-gradient(to right, #fffbd5, #b20a2c); */
+  /* background-image: linear-gradient(100deg,#d64c7f,#d34b59 50%); */
+  /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+  /* background-image: linear-gradient(to right top, #da5959, #da646c, #d86f7e, #d47a8e, #cf869b); */
+  /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #999ae2, #9899e4, #9799e5, #a88cde, #ba7dd2, #cc6cc1, #da59ab);} */
+  /* background-image: linear-gradient(to right top, #ea7a71, #f3919e, #f4abc5, #f1c6e2, #f1e0f4, #eedef5, #ebddf7, #e8dbf8, #dfbeed, #dba0dd, #da7fc7, #da59ab); */
 }
+
+
+.home {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  height: calc(100vh - 46px);
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+h1 {
+  color: white;
+  font-weight: bolder;
+}
+
 .rounded-pill{
     width: 235px;
     height: 75px;
