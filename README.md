@@ -95,3 +95,40 @@ Here are a few screenshots to give you an idea of the user interfaces:
 ### Patient Appointment Interface
 
 ![Diagnostics Interface](./ReadMe_SS/patient_appointment.jpg)
+
+### Doctor Registration by Admin Interface
+
+![Diagnostics Interface](./ReadMe_SS/admin_adding_doctor.jpg)
+
+## Integration
+
+The application seamlessly integrates with the Health Stack, enabling interoperability between different healthcare systems. This integration enhances data sharing and accessibility across the healthcare landscape.
+
+
+## Identity Management
+
+Robust identity management is achieved through integration with Abha ID and Aadhar. This ensures that only authorized individuals have access to sensitive medical records.
+
+
+## Search and Document Retrieval
+
+Efficiently search and retrieve relevant documents based on specific criteria such as date, doctor, document type, hospital name, and patient name. This feature streamlines data access and enhances decision-making.
+
+
+## Document Sharing
+
+Users can share medical documents in various formats, including images and PDFs. This promotes collaboration among healthcare providers and facilitates information exchange.
+
+
+## Digitization of PHR Documents
+
+The application provides a user-friendly interface for digitizing Personal Health Record (PHR) documents, reducing paperwork and enhancing data accessibility.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+By building this Personal Medical Record Management Application, we aim to revolutionize the healthcare industry by ensuring efficient, secure, and interoperable access to electronic health records. Your participation and contributions are crucial to achieving this vision. Let's make healthcare data management better together!
