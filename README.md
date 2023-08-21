@@ -100,6 +100,10 @@ Here are a few screenshots to give you an idea of the user interfaces:
 
 ![Diagnostics Interface](./ReadMe_SS/admin_adding_doctor.jpg)
 
+### Doctor List Interface
+
+![Diagnostics Interface](./ReadMe_SS/added_doctor.jpg)
+
 ## Integration
 
 The application seamlessly integrates with the Health Stack, enabling interoperability between different healthcare systems. This integration enhances data sharing and accessibility across the healthcare landscape.
