@@ -130,4 +130,5 @@ The application provides a user-friendly interface for digitizing Personal Healt
 
 ---
 
-By building this Personal Medical Record Management Application, we aim to revolutionize the healthcare industry by ensuring efficient, secure, and interoperable access to electronic health records. Your participation and contributions are crucial to achieving this vision. Let's make healthcare data management better together!
+**By building this Personal Medical Record Management Application, we aim to revolutionize the healthcare industry by ensuring efficient, secure, and interoperable access to electronic health records. Your participation and contributions are crucial to achieving this vision. Let's make healthcare data management better together!**
+
