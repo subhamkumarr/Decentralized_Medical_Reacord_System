@@ -49,7 +49,16 @@ Traditional paper-based medical records are being replaced by electronic health 
 
 ### Prerequisites
 
-- Node.js (version X.X.X)
-- npm (version X.X.X)
-- Blockchain SDK (version X.X.X)
-- Health Stack API (version X.X.X)
+- Node.js (version v18.17.0)
+- npm (version 9.6.7)
+- Blockchain SDK 
+- Health Stack API 
+
+### Installation
+
+1. Clone this repository: `https://github.com/subhamkumarr/FlipKart_Grid_5.0.git`
+2. Navigate to the project directory: `cd EHR-2.0`
+3. Install dependencies: `npm install`
+4. Configure blockchain SDK with necessary credentials.
+5. Configure Health Stack API credentials.
+
