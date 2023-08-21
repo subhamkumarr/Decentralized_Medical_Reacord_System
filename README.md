@@ -74,11 +74,11 @@ Here are a few screenshots to give you an idea of the user interfaces:
 
 ### Clinic Interface
 
-![Clinic Interface](ReadMe_ss/clientInterface.jpg)
+![Clinic Interface](./ReadMe_SS/clientInterface.jpg)
 
 ### Hospital Interface
 
-![Hospital Interface](screenshots/hospital_interface.png)
+![Hospital Interface](./ReadMe_SS/clientInterface.jpg)
 
 ### Doctor Interface
 
