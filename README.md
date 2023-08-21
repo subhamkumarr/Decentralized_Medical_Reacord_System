@@ -76,7 +76,9 @@ Here are a few screenshots to give you an idea of the user interfaces:
 
 ![Clinic Interface](./ReadMe_SS/clientInterface.jpg)
 
+### Admin Interface
 
+![Hospital Interface](./ReadMe_SS/admin_dashboard.jpg)
 
 ### Doctor Interface
 
