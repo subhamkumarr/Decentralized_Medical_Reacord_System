@@ -62,3 +62,32 @@ Traditional paper-based medical records are being replaced by electronic health 
 4. Configure blockchain SDK with necessary credentials.
 5. Configure Health Stack API credentials.
 
+## Usage
+
+To start the application, run: `npm start`
+
+## User Interface
+
+The application provides intuitive user interfaces for various stakeholders, including clinics, hospitals, doctors, diagnostics, and patients. Each user interface is tailored to the specific needs of the stakeholder, ensuring a seamless experience.
+
+Here are a few screenshots to give you an idea of the user interfaces:
+
+### Clinic Interface
+
+![Clinic Interface](ReadMe_ss/clientInterface.jpg)
+
+### Hospital Interface
+
+![Hospital Interface](screenshots/hospital_interface.png)
+
+### Doctor Interface
+
+![Doctor Interface](screenshots/doctor_interface.png)
+
+### Diagnostics Interface
+
+![Diagnostics Interface](screenshots/diagnostics_interface.png)
+
+### Patient Interface
+
+![Patient Interface](screenshots/patient_interface.png)
