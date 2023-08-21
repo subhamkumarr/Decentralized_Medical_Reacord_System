@@ -72,22 +72,26 @@ The application provides intuitive user interfaces for various stakeholders, inc
 
 Here are a few screenshots to give you an idea of the user interfaces:
 
-### Clinic Interface
+### Client Interface
 
 ![Clinic Interface](./ReadMe_SS/clientInterface.jpg)
 
-### Hospital Interface
+### Admin Interface
 
-![Hospital Interface](./ReadMe_SS/clientInterface.jpg)
+![Hospital Interface](./ReadMe_SS/admin_dashboard.jpg)
 
 ### Doctor Interface
 
-![Doctor Interface](screenshots/doctor_interface.png)
-
-### Diagnostics Interface
-
-![Diagnostics Interface](screenshots/diagnostics_interface.png)
+![Doctor Interface](./ReadMe_SS/doctor_dashboard.jpg)
 
 ### Patient Interface
 
-![Patient Interface](screenshots/patient_interface.png)
+![Patient Interface](./ReadMe_SS/patient_dashboard.jpg)
+
+### Patient Registration Interface
+
+![Diagnostics Interface](./ReadMe_SS/patient_registration.jpg)
+
+### Patient Appointment Interface
+
+![Diagnostics Interface](./ReadMe_SS/patient_appointment.jpg)
