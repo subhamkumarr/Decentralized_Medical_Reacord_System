@@ -15,8 +15,6 @@ Welcome to the Personal Medical Record Management Application! This application 
 - [Search and Document Retrieval](#search-and-document-retrieval)
 - [Document Sharing](#document-sharing)
 - [Digitization of PHR Documents](#digitization-of-phr-documents)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 Traditional paper-based medical records are being replaced by electronic health records (EHRs) due to their efficiency and enhanced security. However, challenges such as interoperability and privacy concerns have arisen. The Government of India has initiated the National Digital Health Mission (NHDM) to tackle these challenges. This application, developed as part of the FlipKart GRiD initiative, utilizes a blockchain infrastructure to address interoperability, privacy, and data redundancy issues associated with EHRs.
